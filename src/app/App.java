@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class App {
+    volatile int k;
     public static void main(String[] args) throws Exception {
         List<Animal> animals = new ArrayList<Animal>(); // lista de animales
         animals.add(new Animal("fish", false, true));
@@ -13,6 +14,7 @@ public class App {
         animals.add(new Animal("ratata", false, true));
         System.out.println();
         // Comment!
+        
 
         print(animals, a -> a.canHop());
         print(animals, a -> a.canSwim());
