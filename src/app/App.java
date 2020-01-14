@@ -12,7 +12,7 @@ public class App {
         animals.add(new Animal("turtle", false, true));
         animals.add(new Animal("ratata", false, true));
         System.out.println();
-        //Comment!
+        // Comment!
 
         print(animals, a -> a.canHop());
         print(animals, a -> a.canSwim());
